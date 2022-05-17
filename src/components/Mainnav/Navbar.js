@@ -3,7 +3,10 @@ import "./Navbarstyle.css"
 import { BsFillHandbagFill } from 'react-icons/bs';
 const Navbar = () => {
 
-
+    const handleClick = () => {
+        console.log("go")
+        
+     }
 
 
     return (
@@ -14,7 +17,7 @@ const Navbar = () => {
             <div className="menu-container">
                 <div className="element">
                 {/* <button className="btn-success ">Logout</button> */}
-                <BsFillHandbagFill color="white" fontSize="1.5em"/>
+                <BsFillHandbagFill color="white" fontSize="1.5em" onClick={handleClick}/>
                 </div>
                 <div className="element">
                 <button className="btn-success ">Logout</button>
