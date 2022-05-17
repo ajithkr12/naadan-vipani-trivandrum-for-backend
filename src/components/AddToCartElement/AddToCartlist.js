@@ -35,6 +35,8 @@ export const ProductsWrapper = styled.div`
         border:2px solid #678543;
         padding:24px;
         border-radius:12px;
+       
+        margin-bottom: 8%;
         
 
         @media screen and (max-width: 1000px){
@@ -61,7 +63,7 @@ export const ProductCard = styled.div`
     max-width: 740px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: all 0.2s ease-in-out;
-    margin :5px opx 0px 0px;
+    margin :5px 0px 5px 0px;
     
     // &:hover{
     //     transform: scale(1.02);

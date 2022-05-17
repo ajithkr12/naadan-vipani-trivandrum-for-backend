@@ -6,19 +6,35 @@ export const SubtotalContainer = styled.div`
     background: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-center;
+    justify-content: center;
+    align-content: flex-start;
+    // align-content: start;
     padding: 0px;
     max-width: 400px;
     max-height:300px;
-    
-    
+   
 
+
+    
+    
+    @media screen and (max-width: 735px){
+        max-width: 100%;
+        max-height:auto;
+        justify-content: center;
+        align-content: flex-start;
+        margin-left:0%;
+        justify-content: center;
+        align-content: center;
+        margin:2% 2% 2% 2%;
+
+    }
     
 
 
     @media screen and (max-width: 320px){
         max-width: 275px;
+        justify-content: center;
+        align-content: flex-start
     }
 
 `

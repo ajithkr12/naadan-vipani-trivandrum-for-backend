@@ -12,10 +12,11 @@ const MobileNav = ({ isOpen, toggle }) => {
                     <MobileNavLink to="/" onClick={toggle}>Home</MobileNavLink> 
                     <MobileNavLink to="products" smooth={true} duration={500} spy={true} offset={-120} exact='true' onClick={toggle}>Products</MobileNavLink> 
                     <MobileNavLink to="/orders" onClick={toggle}>Orders</MobileNavLink> 
+
                 </MobileNavMenu>
-                {/* <MobileNavBtn>
-                    <MobileNavRoute to="/signin" onClick={toggle}>Sign In</MobileNavRoute>
-                </MobileNavBtn> */}
+                <MobileNavBtn>
+                    <MobileNavRoute to="/signin" onClick={toggle}>Login</MobileNavRoute>
+                </MobileNavBtn>
  
             </MobileNavWrapper>
         </MobileNavContainer>

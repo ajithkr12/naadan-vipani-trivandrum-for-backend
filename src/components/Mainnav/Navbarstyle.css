@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.container{
+    background-color: aquamarine;
+    padding: 5%;
+    
+}
+.select_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.select_container select{
+    width: 90%;
+    padding: 4% 0% 4% 0%;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #046d04;
+    border-radius: 10px;
+
+}
+.order-container{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    
+}
+.address-container{
+    display: inline-block;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: rgb(206, 206, 64);
+
+}
+.item-container{
+    display: inline-block;
+    justify-content: flex-start;
+    align-content: space-between;
+    background-color: chartreuse;
+}
+.item-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-container{
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.content-container p{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-container{
+    background: #161616;
+    height: 80px;
+    margin-top : -80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    font-size: 1rem;
+    top: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    z-index: 10;
+}
+
+.logo-container h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: 700;
+
+}
+@media screen and (max-width: 400px) {
+    .logo-container h2{
+
+        margin-left: 20px;
+ 
+    
+    }
+  }
+.btn-success{
+    border: none;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(1, 191, 113);
+    border-radius: 24px;
+
+    
+}
+.element{
+    display: inline;
+    margin-right: 18px;
+}

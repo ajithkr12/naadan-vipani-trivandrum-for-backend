@@ -8,7 +8,7 @@ import { FiShoppingBag } from 'react-icons/fi'
 /*================= Navbar items ==================*/
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? '#010606' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? '#010606' : '#010606')};
     height: 80px;
     margin-top : -80px;
     display: flex;
@@ -43,7 +43,7 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;
+    max-width: 400px;
     
 `;
 
@@ -101,7 +101,7 @@ export const MenuIcon = styled.div`
         cursor: pointer;
     }
 
-`;
+`
 
 export const ExpandToggle = styled(HiMenuAlt4)`
     color: #fff;
@@ -112,7 +112,18 @@ export const ExpandToggle = styled(HiMenuAlt4)`
 
 
 export const BagIconWrapper = styled.div`
-    display: none;
+    // display: none;
+    display: block;
+    position: absolute;
+    transform: translate(-100%, 55%);
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 5px 12px;    
+    top: -12px;
+    right: 1rem;
     
 
     @media screen and (max-width: 600px){

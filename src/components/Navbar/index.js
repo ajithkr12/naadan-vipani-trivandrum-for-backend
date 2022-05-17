@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Nav, NavbarContainer, NavLogo, MenuIcon, BagIconWrapper, BagIcon, ItemCount, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, ExpandToggle} from './NavbarElements'
 import { animateScroll as scroll } from 'react-scroll'
-
+import { useHistory } from "react-router-dom";
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
 
@@ -20,7 +20,12 @@ const Navbar = ({ toggle }) => {
     const toggleHome = () => {
         scroll.scrollToTop();
     }
-
+    let history = useHistory();
+      
+    const abc = () => {
+       console.log("go")
+       history.push("/cartlist");
+    }
     return (
         
         <>
@@ -34,6 +39,7 @@ const Navbar = ({ toggle }) => {
                 </MenuIcon>
             </NavbarContainer> 
             <NavMenu>
+
                 <NavItem>
                     <NavLinks to='/' smooth={true} duration={500} spy={true} offset={-80} exact='true'  >Home</NavLinks>
                 </NavItem>
@@ -44,10 +50,10 @@ const Navbar = ({ toggle }) => {
                     <NavLinks to='Orders' smooth={true} duration={500} spy={true} offset={-80} exact='true' >Orders</NavLinks>
                 </NavItem>
                 <NavMenu>
-                <BagIconWrapper>
-                <BagIcon />
-                <ItemCount>123</ItemCount>
-            </BagIconWrapper> 
+                {/* <BagIconWrapper>
+                    <BagIcon />
+                    <ItemCount>12</ItemCount>
+                </BagIconWrapper>  */}
             
             </NavMenu>
             
@@ -55,8 +61,12 @@ const Navbar = ({ toggle }) => {
 
             
             <NavBtn>
-                <NavBtnLink to="/cartlist" onClick={toggle}>Sign In</NavBtnLink>
+                <NavBtnLink to="/">Logout</NavBtnLink>
             </NavBtn>
+            <BagIconWrapper onClick={abc}>
+                    <BagIcon/>
+                    <ItemCount>12</ItemCount>
+                </BagIconWrapper> 
             
         </Nav>       
         </>
